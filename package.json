@@ -1,1 +1,41 @@
-{"name":"ftp","version":"0.3.10","author":"Brian White <mscdex@mscdex.net>","description":"An FTP client module for node.js","main":"./lib/connection","engines":{"node":">=0.8.0"},"dependencies":{"readable-stream":"1.1.x","xregexp":"2.0.0"},"scripts":{"test":"node test/test.js"},"keywords":["ftp","client","transfer"],"licenses":[{"type":"MIT","url":"http://github.com/mscdex/node-ftp/raw/master/LICENSE"}],"repository":{"type":"git","url":"http://github.com/mscdex/node-ftp.git"},"devDependencies":{"eslint":"^8.40.0","prettier":"^2.8.8","typescript":"^5.0.4"}}
+{
+  "name": "ftp",
+  "version": "0.3.10",
+  "author": "Brian White <mscdex@mscdex.net>",
+  "description": "An FTP client module for node.js",
+  "main": "dist/main.js",
+  "types": "dist/declarations/index.d.ts",
+  "typings": "dist/declarations/index.d.ts",
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "dependencies": {
+    "readable-stream": "1.1.x",
+    "xregexp": "2.0.0"
+  },
+  "scripts": {
+    "test": "node test/test.js",
+    "dev": "tsc -p tsconfig.json -w",
+    "build": "tsc -p tsconfig.json"
+  },
+  "keywords": [
+    "ftp",
+    "client",
+    "transfer"
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://github.com/mscdex/node-ftp/raw/master/LICENSE"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/mscdex/node-ftp.git"
+  },
+  "devDependencies": {
+    "eslint": "^8.40.0",
+    "prettier": "^2.8.8",
+    "typescript": "^5.0.4"
+  }
+}
