@@ -11,12 +11,14 @@
   },
   "dependencies": {
     "readable-stream": "1.1.x",
+    "source-map-support": "^0.5.21",
     "xregexp": "2.0.0"
   },
   "scripts": {
     "test": "node test/test.js",
     "dev": "tsc -p tsconfig.json -w",
-    "build": "tsc -p tsconfig.json"
+    "build": "tsc -p tsconfig.json",
+    "prettier-format": "prettier --write src test"
   },
   "keywords": [
     "ftp",
@@ -34,6 +36,8 @@
     "url": "http://github.com/mscdex/node-ftp.git"
   },
   "devDependencies": {
+    "@types/node": "^20.1.2",
+    "@types/source-map-support": "^0.5.6",
     "eslint": "^8.40.0",
     "prettier": "^2.8.8",
     "typescript": "^5.0.4"
